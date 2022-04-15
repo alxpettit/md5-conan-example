@@ -1,5 +1,12 @@
 Based on [this](https://docs.conan.io/en/latest/getting_started.html) doc.
 
+# Getting repo
+
+```bash
+git clone "https://github.com/alxpettit/md5-conan-example"
+cd md5-conan-example/
+```
+
 # backward compatibility ABI setting
 (see [here](https://docs.conan.io/en/latest/howtos/manage_gcc_abi.html#manage-gcc-abi))
 ```bash
@@ -19,6 +26,8 @@ compiler.libcxx=libstdc++11
 conan profile new default --detect
 conan profile update settings.compiler.libcxx=libstdc++11 default
 ```
+
+# Prereqs & actually building your thing
 
 ```bash
 # We prefer to build in build directory to keep build artifacts separate from source code
